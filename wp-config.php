@@ -26,7 +26,7 @@ define( 'DB_NAME', 'planty2' );
 define( 'DB_USER', 'suzieguillermic' );
 
 /** Database password */
-define( 'DB_PASSWORD', '@vvSNtqH79ooFCLg' );
+define( 'DB_PASSWORD', 'Sesouvenir56570@' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

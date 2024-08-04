@@ -10,4 +10,37 @@ Version: 4.7.3.1721740412
 Updated: 2024-07-23 15:13:32
 
 */
+.menu-link:hover {
+    font-weight: bold; /* survol en gras */
+}
+
+/* Appliquez Flexbox au conteneur parent pour modifier le bouton envoyer de contact form */
+.form-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.wpcf7-form {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+    border-radius: 5px !important;
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    background-color: #E0B9B4;
+}
+
+
+
+
+
+
+
 
