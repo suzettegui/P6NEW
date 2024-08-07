@@ -37,10 +37,40 @@ Updated: 2024-07-23 15:13:32
     background-color: #E0B9B4;
 }
 
+/* modificztion du formulaire de commande */
+/* contenaire des images et des cases  */
 
+ /* Container pour les images et les champs */
+.image-nombre {
+    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
+    justify-content: space-between; /* Centre les items horizontalement */
+   margin-top: 10px;
+    width: 100% !important; 
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+}
 
+/* Style pour chaque paire image-champ */
+.les2 {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments (image et champ) verticalement */
+    align-items: center;
+ 
+}
 
+/* Style pour les images */
+.les2 img {
+    display: block; /* Supprime les espaces en dessous des images */
+    margin-bottom: 10px; 
 
+}
 
-
-
+.image-nombre .nombre {
+    margin-top: 15px;
+    width: 39px !important; /* Largeur des inputs */
+    height: 56px !important; /* Hauteur des inputs */
+    padding: 0 !important; /* Supprimer le padding */
+    border-radius: 0 !important; /* Supprimer les coins arrondis */
+    box-sizing: border-box !important; /* Inclure les bordures et paddings dans la largeur/hauteur */
+    text-align: center !important; /* Centrer le texte à l'intérieur des inputs */
+    font-size: 16px !important; /* Ajuster la taille de la police si nécessaire */
+}
