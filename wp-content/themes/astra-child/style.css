@@ -13,10 +13,10 @@ Updated: 2024-07-23 15:13:32
 
 */
 .menu-link:hover {
-    font-weight: bold; /* survol en gras */
+    font-weight: bold; /* survol en gras du menu */
 }
 
-/* Appliquez Flexbox au conteneur parent pour modifier le bouton envoyer de contact form */
+/* Appliquez Flexbox au conteneur parent pour modifier le bouton envoyer de contact form  page rencontrer*/
 .form-container {
     display: flex;
     justify-content: center; 
@@ -24,10 +24,10 @@ Updated: 2024-07-23 15:13:32
 
 .wpcf7-form {
     display: flex;
-    flex-direction: column; /* Aligne les éléments en colonne */
-    align-items: center; /* Centre les éléments horizontalement */
+    flex-direction: column; 
+    align-items: center; 
 }
-
+/* bouton envoyer page ous rencontrer */
 .wpcf7-form-control.wpcf7-submit.has-spinner {
     border-radius: 5px !important;
     display: flex;
@@ -48,7 +48,7 @@ Updated: 2024-07-23 15:13:32
 }
 
 .wpcf7 .wpcf7-form-control-wrap{
-    padding-top: 10px;
+    padding-top: 20px;
 
 }
 
@@ -73,12 +73,10 @@ Updated: 2024-07-23 15:13:32
 }
 
 /* modificztion du formulaire de commande */
-/* contenaire des images et des cases  */
-
  /* Container pour les images et les champs */
 .image-nombre {
-    display: flex; /* Utilise flexbox pour aligner les éléments en ligne */
-    justify-content: space-between; /* Centre les items horizontalement */
+    display: flex; 
+    justify-content: space-between; 
    margin-top: 10px;
     width: 100% !important; 
     flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
@@ -87,32 +85,32 @@ Updated: 2024-07-23 15:13:32
 /* Style pour chaque paire image-champ */
 .les2 {
     display: flex;
-    flex-direction: column; /* Aligne les éléments (image et champ) verticalement */
+    flex-direction: column; 
     align-items: center;
  
 }
 
 /* Style pour les images */
 .les2 img {
-    display: block; /* Supprime les espaces en dessous des images */
+    display: block; /* enlever espace sous les images */
     margin-bottom: 10px; 
 
 }
 
 .image-nombre .nombre {
     margin-top: 15px;
-    width: 39px !important; /* Largeur des inputs */
-    height: 56px !important; /* Hauteur des inputs */
+    width: 39px !important; 
+    height: 56px !important; 
     padding: 0 !important; /* Supprimer le padding */
-    border-radius: 0 !important; /* Supprimer les coins arrondis */
+    border-radius: 0 !important; 
     box-sizing: border-box !important; /* Inclure les bordures et paddings dans la largeur/hauteur */
-    text-align: center !important; /* Centrer le texte à l'intérieur des inputs */
-    font-size: 16px !important; /* Ajuster la taille de la police si nécessaire */
+    text-align: center !important; 
+    font-size: 16px !important; 
 }
 .ligne-horizontale {
     width: 100%; /* Prend toute la largeur */
-    height: 1px; /* Épaisseur de 1 pixel */
-    background-color: white; /* Couleur blanche */
+    height: 1px; 
+    background-color: white; 
     border: none; 
     margin-top: 50px;
 }
@@ -131,14 +129,14 @@ Updated: 2024-07-23 15:13:32
 }
 .ligne-verticale{
         width: 1px; /* Épaisseur de 1 pixel */
-        background-color: white; /* Couleur blanche */
+        background-color: white; 
         border: none;
         transform: translateX(-50%); /* Centre exactement au milieu */
         margin-top: 70px;
     }
     
 
-    h2 {
+    .contact-2-colonnes h2 {
         font-family: 'Syne', sans-serif !important;
         font-weight: 700 !important;
         font-size: 30px !important;
@@ -148,19 +146,19 @@ Updated: 2024-07-23 15:13:32
     }
  /* modification des champs de formulaire */
  .contact-nom-entree label {
-    font-family: 'Syne', sans-serif !important; /* Appliquer la police Syne */
-    font-weight: 400 !important; /* Poids normal pour les labels */
-    color: #FFFFFF !important; /* Couleur blanche pour le texte des labels */
-    font-size: 20px !important; /* Taille de police de 20px */
+    font-family: 'Syne', sans-serif !important; 
+    font-weight: 400 !important; 
+    color: #FFFFFF !important; 
+    font-size: 20px !important; 
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .contact-nom-entree input {
     height: 71px !important; /* Hauteur des champs de formulaire */
-    border-radius: 8px !important; /* Border radius pour arrondir les coins */
-    padding: 10px; /* Ajouter un padding pour l'espacement interne */
-    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur/hauteur */
+    border-radius: 8px !important; 
+    padding: 10px; /* l'espacement interne */
+    box-sizing: border-box; 
 }
 
 .bouton-commander{
@@ -169,4 +167,132 @@ Updated: 2024-07-23 15:13:32
     align-items: center; 
     padding-top: 50px;
     padding-left: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+    .image-nombre {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .les2 {
+        width: 100%;
+        margin-bottom: 20px; /* Espacem entre  élément */
+    }
+
+    .les2 img {
+        width: 50%; /* taille des images */
+    }
+
+    .contact-2-colonnes {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contact-column {
+        width: 90%; /* Prend presque toute la largeur */
+        margin-bottom: 20px; 
+    }
+
+    .ligne-verticale {
+        display: none; 
+    }
+
+    .ligne-horizontale {
+        margin-top: 20px;
+    }
+
+    .contact-nom-entree input {
+        width: 100%; /* ils doivent prendre  toute la largeur de la colonne */
+    }
+
+    .bouton-commander {
+        justify-content: center !important; 
+        padding-left: 76px; 
+        padding-right: 35px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .image-nombre {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+    }
+
+    .les2 {
+        width: 45%; /* est égal à 2 élements par ligne */
+        margin-bottom: 20px; 
+    }
+
+    .contact-2-colonnes {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .contact-column {
+        width: 90%; /* Les colonnes prennent presque toute la largeur */
+        margin-bottom: 20px; 
+    }
+
+    .ligne-verticale {
+        display: none; 
+    }
+
+    .ligne-horizontale {
+        margin-top: 20px; 
+    }
+
+    .contact-nom-entree input {
+        width: 100%; 
+    }
+
+    .bouton-commander {
+        justify-content: center; 
+        padding-left: 76px; 
+        padding-right: 35px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .image-nombre {
+        flex-direction: row; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .les2 {
+        width: 48%; /* Deux éléments par ligne */
+        margin-bottom: 20px; 
+    }
+
+    .contact-2-colonnes {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .contact-column {
+        width: 45%; /* Largeur de chaque colonne */
+        margin-bottom: 20px; 
+    }
+
+    .ligne-verticale {
+        display: block; 
+    }
+
+    .contact-nom-entree input {
+        width: 100%;
+    }
+
+    .bouton-commander {
+        justify-content: center; 
+        padding-left: 76px;
+        padding-right: 35px;
+        width: 100%;
+    }
+
+    
+      
+        
 }
